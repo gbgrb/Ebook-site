@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganhe Dinheiro em Casa: Guia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .content {
+            text-align: center;
+            margin: 50px 20px;
+        }
+        .content p {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+        .book-image {
+            width: 300px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .ebook-link {
+            margin-top: 20px;
+            display: block;
+            font-size: 1em;
+            color: #4CAF50;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        Ganhe Dinheiro em Casa: Guia
+    </div>
+
+    <div class="content">
+        <img src="https://i.imgur.com/A6vjUQl.jpeg" alt="Capa do E-book" class="book-image">
+        <p>Aprenda a ganhar dinheiro no conforto da sua casa com dicas práticas e eficazes. Este guia traz tudo o que você precisa saber para começar a gerar sua própria renda, mesmo sendo estudante!</p>
+        <button class="btn" onclick="showPixInfo()">Pagar via Pix</button>
+    </div>
+
+    <!-- Modal Pix -->
+    <div id="pixModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Pagamento via Pix</h2>
+            <p>Use a chave Pix abaixo para realizar o pagamento:</p>
+            <p><strong>+5521995096677</strong></p>
+            <p>Após o pagamento, <strong>clique no link abaixo</strong> para acessar seu e-book:</p>
+            <a href="https://drive.google.com/file/d/1J9vzQ_lCo1kGrSlbdat0dmGQPtP_OlMM/view?usp=drivesdk" class="ebook-link" target="_blank">Baixar E-book Agora</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2025 Ganhe Dinheiro em Casa. Todos os direitos reservados.
+    </div>
+
+    <script>
+        function showPixInfo() {
+            document.getElementById("pixModal").style.display = "block";
+        }
+        function closeModal() {
+            document.getElementById("pixModal").style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == document.getElementById("pixModal")) {
+                closeModal();
+            }
+        }
+    </script>
+
+</body>
+</html>
